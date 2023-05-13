@@ -14,7 +14,7 @@ int prompt(char **buffer)
 	ssize_t characters = 0;
 	size_t n = 0;
 
-	printf("($) ");
+	printf("(cisfun$) ");
 	characters = getline(buffer, &n, stdin);
 
 	return (characters);
