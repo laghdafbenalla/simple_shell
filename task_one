@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/**
+ * main - Entry point
+ *
+ * Description: 'to multiply two numbers'
+ * prog: multiply two numbers
+ *
+ * Return: Always 0 (Success)
+ */
+
+int main()
+
+{    int m;
+     int n;
+    int prod=0;
+
+    printf("Enter two numbes to multiply: \n")
+    scanf("%lf %lf", &m, &n);
+    prod = m * n;
+
+	printf("Your answer is = %.2lf", prod);
+    return 0;
+}
