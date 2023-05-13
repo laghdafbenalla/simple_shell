@@ -8,7 +8,6 @@
 
 int main(void)
 {
-	char *av[] = {NULL};
 	char *buffer = {NULL};
 	ssize_t result = 1;
 
