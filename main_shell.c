@@ -9,12 +9,15 @@
 int main(void)
 {
 	char *buffer = {NULL};
-	ssize_t result = 1;
+	ssize_t results = 1;
+	char **argfill = NULL;
+	char *result = "exit";
+	int i = 0;
 
-	while (result)
+	while (results)
 	{
-		result = prompt(&buffer);
-		if (result == -1)
+		results = prompt(&buffer);
+		if (results == -1)
 		{
 			free(buffer);
 			exit(100);
@@ -24,3 +27,16 @@ int main(void)
 	free(buffer);
 	return (0);
 }
+	
+	argfill = fillarguments(buff);
+		while (result[i])
+		{
+			if (result[i] != av[0][i])
+				break;
+			if (i == 3)
+				exit(1);
+			i++;
+		}
+		processus(argfill, buff);
+
+		free(argfill);

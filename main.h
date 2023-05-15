@@ -15,6 +15,7 @@
 #include <sys/wait.h>
 
 int prompt(char **buff);
-void processus(char **av, char *buf, ssize_t charactersnumbers);
+void processus(char **argfill, char *buf, ssize_t charactersnumbers);
+int _strlen(char *str);
 
 #endif
