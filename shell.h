@@ -236,4 +236,10 @@ int count_characters(char *string, char *character);
 
 /*======== alias_management.c ========*/
 
+/* print the list of alias */
+int print_alias(data_of_program *data, char *alias);
+
+/* get the alias name */
+char *get_alias(data_of_program *data, char *alias);
+
 #endif /* SHELL_H */
