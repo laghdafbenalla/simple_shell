@@ -12,10 +12,7 @@ int builtins_list(data_of_program *data)
 	builtins options[] = {
 		{"exit", builtin_exit},
 		{"help", builtin_help},
-		{"cd", builtin_cd},
 		{"env", builtin_env},
-		{"setenv", builtin_set_env},
-		{"unsetenv", builtin_unset_env},
 		{NULL, NULL}
 	};
 
